@@ -6,14 +6,18 @@ public class FormulaireHotel extends Formulaire {
 	int numRes;
 	int nbLitSimple;
 	int nbLitDouble;
-	int numEnt;
+	int id;
 
-	public FormulaireHotel(int jour, int mois, int nbLitSimple, int nbLitDouble, int numEnt) {
+	public FormulaireHotel(int jour, int mois, int nbLitSimple, int nbLitDouble, int id) {
 		this.jour = jour;
 		this.mois = mois;
 		this.nbLitSimple = nbLitSimple;
 		this.nbLitDouble = nbLitDouble;
-		this.numEnt = numEnt;
+		this.id = id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public int getJour() {
@@ -36,8 +40,8 @@ public class FormulaireHotel extends Formulaire {
 		return numRes;
 	}
 
-	public int getNumEnt() {
-		return numEnt;
+	public int getId() {
+		return id;
 	}
 
 }
